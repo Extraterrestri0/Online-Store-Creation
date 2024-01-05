@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+       <section id="header">
+        <a href="#"><img src="img/Products/270202640_343280577668773_7025172463169109102_n.png  " class="logo" alt=""></a>
+
+            <div>
+                <ul id="navbar">
+                    <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                                <li><a href="about.html">About</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                        <li id="lg-bag"><a href="cart.html"><img src="data:image/png;base64,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"></a></li>
+                                        <a href="#" id="close"><i class="far fa-times"></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="cart.html"><i class="fa-thin fa-bag-shopping"></i></a>
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+       </section>
+
+       <section id="hero">
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & up to 70% off!</p>
+        <button>Shop Now</button>
+
+       </section>
+
+       <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="img/Features/f1.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/Features/f2.png" alt="">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/Features/f3.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/Features/f4.png" alt="">
+            <h6>Promotions</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/Features/f5.png" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/Features/f6.png" alt="">
+            <h6>24/7 Support</h6>
+        </div>
+
+       </section>
+
+       <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Morden Design</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/Products/f1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Carton Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/Products/f2.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Carton Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/Products/f3.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Carton Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/Products/f4.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Carton Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/Products/f5.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Carton Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/Products/f6.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Carton Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/Products/f7.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Carton Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/Products/f8.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Carton Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+       </section>
+
+       <section id="banner" class="section-m1">
+        <h4>Repair Services</h4>
+        <h2>Up to <span>70% Off</span> - All t-Shirts & Accessories</h2>
+        <button class="normal">Explore More</button>
+       </section>
+
+       <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>crazy deals</h4>
+            <h2>buy 1 get 1 free</h2>
+            <span>The best classic dress is on sale at cara</span>
+            <button class="white">Lean More</button>
+        </div>
+        <div class="banner-box banner-box2">
+            <h4>spring/summer</h4>
+            <h2>upcomming season</h2>
+            <span>The best classic dress is on sale at cara</span>
+            <button class="white">Collection</button>
+        </div>
+       </section>
+
+       <section id="banner3">
+        <div class="banner-box">
+            <h2>SEASONAL SALE</h2>
+            <h3>Winter Collection -50% OFF</h3>
+        </div>
+        <div class="banner-box banner-box2">
+            <h2>SEASONAL SALE</h2>
+            <h3>Spring / Summer 2023</h3>
+        </div>
+        <div class="banner-box banner-box3">
+            <h2>SEASONAL SALE</h2>
+            <h3>New Trendy Prints</h3>
+        </div>
+
+       </section>
+
+       <section id="newsletter" class="section-p1 section-m1"> 
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+       </section>
+     
+       <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/Products/270202640_343280577668773_7025172463169109102_n.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>France </p>
+            <p><strong>Phone: </strong>+359 </p>
+            <p><strong>Hours: </strong>10:00 - 18:00, Mon - Sat </p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install ">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/Pay/app.jpg" alt="">
+                <img src="img/Pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/Pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2023 Nikola Nikolov</p>
+        </div>
+
+
+       </footer>
+
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
